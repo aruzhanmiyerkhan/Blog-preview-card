@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Preview Card</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4d04e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 8px 8px 0px black;
+      width: 320px;
+      overflow: hidden;
+      padding: 20px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .tag {
+      background-color: #f4d04e;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 14px;
+      display: inline-block;
+      margin-top: 15px;
+    }
+
+    .date {
+      color: #555;
+      font-size: 12px;
+      margin-top: 8px;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-top: 10px;
+      color: #000;
+    }
+
+    p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.4;
+    }
+
+    .author {
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+    }
+
+    .author img {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .author span {
+      font-size: 14px;
+      font-weight: bold;
+    }
+    @media screen and (max-width:768px){
+      .card{
+        width: 90%;
+        padding: 15px;
+      }
+      h2{
+        font-size: 18px;
+      }
+      h2:hover {
+       color: #f4d04e;
+}
+      p{
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="assets/images/illustration-article.svg" alt="Article Image">
+    <div class="tag">Learning</div>
+    <div class="date">Published 21 Dec 2023</div>
+    <h2>HTML & CSS foundations</h2>
+    <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+    <div class="author">
+      <img src="assets/images/image-avatar.webp" alt="Author">
+      <span>Greg Hooper</span>
+    </div>
+  </div>
+</body>
+</html>
